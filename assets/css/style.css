@@ -6,6 +6,11 @@ html, body {
     color: #777777;
 }
 
+/* for sticky footer */
+.wrapper {
+    min-height: 100%;
+}
+
 header {
     background-color: #ffffff;
     border-bottom: 3px solid #cccccc;
@@ -14,7 +19,6 @@ header {
 .header_box {
     width: 960px;
     margin: auto;
-    /* background-color: pink;  delete later */
     overflow: auto; 
 }
 
@@ -34,7 +38,6 @@ nav {
 }
 
 .menu {
-    /* background-color: yellow; delete later */
     float: left;
     padding: 5px;
     margin-right: 5px;
@@ -61,10 +64,6 @@ section {
     background-repeat:repeat;
     padding-top: 40px; 
     padding-bottom: 120px;
-    min-height: 100%;
-    /* for sticky footer */
-    /* margin-bottom: -78px;  */
-
 }
 
 .section_box {
@@ -106,9 +105,9 @@ p {
 }
 
 /* for sticky footer */
-/* .push {
+.push {
     height: 78px;
-} */
+}
 
 footer {
     width: 100%;
@@ -118,6 +117,8 @@ footer {
     color: #ffffff;
     text-align: center;  
     line-height: 110px;
+    /* for sticky footer */
+    margin-top: -78px;
 }
 
 /* Portfolio CSS */
@@ -185,5 +186,4 @@ input[name=submit]:hover {
    border: none;
    /* color from Adobe Kuler */
    background-color: #467F7E;
-
 }
